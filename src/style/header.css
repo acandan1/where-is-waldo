@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 196, 203);
+    font-size: 1.6rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    cursor: pointer;
+}
+
+.waldo-wave { 
+    height: 10vh;
+    mix-blend-mode: multiply;
+}

@@ -1,0 +1,75 @@
+.game-display {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#game-image {
+    align-self: center;
+    height: 80vh;
+    width: auto;
+}
+
+.find-characters {
+    text-align: center;
+    position: fixed;
+    left: 10vw;
+}
+
+.timer {
+    position: fixed;
+    right: 10vw;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.dropdown {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.dropdown-images {
+    height: 8vh;
+}
+
+.dropdown-images:hover {
+    transform: scale(1.2);
+}
+
+.find-images {
+    mix-blend-mode: multiply;
+    height: 20vh;
+}
+
+.character {
+    padding: 1vh;
+    background-color: rgb(235, 122, 122);
+    margin-bottom: 2vh;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(245, 215, 177, 0.4);
+    font-size: 5rem;
+}
+
+.flex-container-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#home-btn {
+    font-size: inherit;
+}

@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Solitreo', cursive;
+    font-family: 'Unbounded', cursive;
+}
