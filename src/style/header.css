@@ -7,9 +7,17 @@
     padding-bottom: 1vh;
 
     cursor: pointer;
+
+    text-align: center;
 }
 
 .waldo-wave { 
     height: 10vh;
     mix-blend-mode: multiply;
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 1rem;
+    }
 }

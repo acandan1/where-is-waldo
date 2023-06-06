@@ -13,10 +13,6 @@ const Home = () => {
     return (
         <div className="home">
             <Header/>
-            <div className="goto-leaderboard" onClick={ () => { navigate('/leaderboard') } }>
-                <img id="logo" src={logo} alt="Leaderboard"></img>
-                <h1>Leaderboard</h1>
-            </div>
             <div className="levels">
                 <Level src={ easy } alt="easy" diffLevel="EASY" id="1" onClick = { () => { navigate(`/game/1`) } } />
                 <Level src={ medium } alt="medium" diffLevel="MEDIUM" id="2" onClick = { () => { navigate(`/game/2`) } }/>

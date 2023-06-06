@@ -6,11 +6,10 @@ import './style/style.css'
 
 const RouteSwitch = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/where-is-waldo">
             <Routes>
                 <Route path='/' element={ <Home/>  } />
                 <Route path='/game/:id' element={ <Game/>  } />
-                <Route path='/leaderboard' element={ <Leaderboard/>  } />
             </Routes>
         </BrowserRouter>
     )

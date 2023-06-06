@@ -69,9 +69,10 @@ const Game = () => {
         setImgWidth(event.target.offsetWidth);
         const x = event.clientX - rect.left; //x position within the element.
         const y = event.clientY - rect.top;  //y position within the element.
+        console.log(x, y)
         setXPos(x);
         setYPos(y);
-        showMenu(event.clientX, event.clientY);
+        showMenu(x, y);
     };
 
     const checkCharacter = (event, index) => {
@@ -119,17 +120,21 @@ const Game = () => {
                             </div>
                         )
                     })}
+                    <p style={{fontSize:'25px'}}>Click on the character and choose from the dropdown menu.</p>
+                    <p style={{color:'green'}}>The image above will turn green if you found the character!</p>
                 </div>
-                <img id="game-image" src= {img} alt="Game" onClick={ handleClick }></img>
-            </div>
-            <div className="dropdown hidden">
-                { array.map((val) => {
-                    return (
-                        <a href="#" key={val} className="choose" onClick={ (event) => checkCharacter(event, array.indexOf(val)) }>
-                            <img src={val} alt="img" className="dropdown-images"></img>
-                        </a>
-                    )
-                })}
+                <div style={{display:'flex', justifyContent:'center', position:'relative', width:`${imgWidth}px`, height:`${imgHeight}px}` }}>
+                    <img id="game-image" src= {img} alt="Game" onClick={ handleClick }></img>
+                    <div className="dropdown hidden">
+                        { array.map((val) => {
+                            return (
+                                <a href="#" key={val} className="choose" onClick={ (event) => checkCharacter(event, array.indexOf(val)) }>
+                                    <img src={val} alt="img" className="dropdown-images"></img>
+                                </a>
+                            )
+                        })}
+                    </div>
+                </div>
             </div>
             <div className="popup flex-container-center hidden">
                 <h1> YOU WON!</h1>
